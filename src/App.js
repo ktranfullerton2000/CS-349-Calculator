@@ -8,8 +8,8 @@ import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
 
 const btnValues = [
-  ["AC", "+/-", "%", "/"],
-  [7, 8, 9, "X"],
+  ["AC", "+/-", "%", "÷"],
+  [7, 8, 9, "x"],
   [4, 5, 6, "-"],
   [1, 2, 3, "+"],
   [0, ".", "="],
@@ -139,7 +139,7 @@ const App = () => {
                   ? percentClickHandler
                   : btn === "="
                   ? equalsClickHandler
-                  : btn === "/" || btn === "X" || btn === "-" || btn === "+"
+                  : btn === "÷" || btn === "x" || btn === "-" || btn === "+"
                   ? signClickHandler
                   : btn === "."
                   ? decimalClickHandler
